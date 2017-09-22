@@ -124,7 +124,9 @@ class App extends Component {
               alignItems: 'center',
             }}
           >
-            <StatusBarProtector/>
+            <StatusBarProtector
+              width={width}
+            />
             <Score
               size={scoreHeight}
               value={this.state.score}

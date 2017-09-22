@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StatusBar, Platform } from 'react-native';
+import { View, Platform } from 'react-native';
 
 
 
@@ -19,9 +19,14 @@ class StatusBarProtector extends Component {
       );
     else
     {
-      StatusBar.setHidden(true);
       return (
-        <View/>
+        <View
+          style={{
+            height: 24,
+            width: this.props.width,
+            backgroundColor: 'lightblue',
+          }}
+        />
       );
     }
   }

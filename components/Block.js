@@ -9,12 +9,24 @@ class Block extends Component {
       return (
         <View
           style={{
-            height: this.props.size - 8,
-            width: this.props.size - 8,
-            margin: 4,
-            backgroundColor: 'orange',
+            height: this.props.size,
+            width: this.props.size,
+            backgroundColor: 'whitesmoke',
+            borderWidth: 1,
+            borderColor: 'white',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
-        />
+        >
+          <View
+            style={{
+              height: this.props.size - 8,
+              width: this.props.size - 8,
+              margin: 4,
+              backgroundColor: 'orange',
+            }}
+          />
+        </View>
       );
     else if (this.props.type === 'snake')
       return (
