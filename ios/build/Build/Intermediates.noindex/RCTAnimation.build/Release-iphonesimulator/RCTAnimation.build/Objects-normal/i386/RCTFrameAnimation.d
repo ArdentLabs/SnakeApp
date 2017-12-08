@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTFrameAnimation.m \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTFrameAnimation.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTAnimationDriver.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTDefines.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTConvert.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTLog.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTAssert.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTUtils.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/yoga/Yoga.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/Libraries/NativeAnimation/RCTAnimationUtils.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h

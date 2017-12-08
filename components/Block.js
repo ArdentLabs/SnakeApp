@@ -34,7 +34,7 @@ class Block extends Component {
           style={{
             height: this.props.size,
             width: this.props.size,
-            backgroundColor: 'blue',
+            backgroundColor: 'rgb(' + (122 / ((Math.floor(this.props.decay / 3) * 3) / 2)) + ',' + (164 / ((Math.floor(this.props.decay / 3) * 3) / 2)) + ',' + (232 / ((Math.floor(this.props.decay / 3) * 3) / 4)) + ')',
           }}
         />
       );

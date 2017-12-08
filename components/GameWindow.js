@@ -10,15 +10,15 @@ class GameWindow extends Component {
     return (
       <View
         style={{
-          height: this.props.height + 1,
-          width: this.props.width + 1,
+          height: this.props.height,
+          width: this.props.width,
           margin: 5,
         }}
       >
         <Board
           loseGame={this.props.loseGame}
           incrementScore={this.props.incrementScore}
-          blockSize={this.props.height / 16}
+          dimensions={{height: this.props.height, width: this.props.width}}
           direction={this.props.direction}
         />
       </View>

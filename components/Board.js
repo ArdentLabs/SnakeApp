@@ -2,31 +2,29 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 
 import Block from './Block'
+import { clearInterval } from 'timers';
+import { setInterval } from 'core-js/library/web/timers';
+const blockSize = 23;
 
 
 
 class Board extends Component {
   constructor(props) {
     super(props);
+    const {height, width} = this.props.dimensions;
     this.snakeInterval = null;
     this.foodInterval  = null;
-    let tempArray = Array(144).fill({ type: 'empty', decay: 0 });
-    tempArray[67] = { type: 'snake', decay: 3 };
+    const numBlocks = Math.floor(height / blockSize) * Math.floor(width / blockSize);
+    let tempArray = Array(numBlocks).fill({ type: 'empty', decay: 0 });
+    tempArray[Math.floor(numBlocks / 2)] = { type: 'snake', decay: 3 };
     this.state = {
       globalDecay: 4,
       boardArray: tempArray,
       foods: 0,
-      head: 67,
+      blocksAcross: Math.floor(width / blockSize),
+      numBlocks: numBlocks,
+      head: Math.floor(numBlocks / 2),
     };
-
-    this.addFood      = this.addFood.bind(this);
-    this.updateSnake  = this.updateSnake.bind(this);
-    this.checkAndMove = this.checkAndMove.bind(this);
-    this.moveLeft     = this.moveLeft.bind(this);
-    this.moveRight    = this.moveRight.bind(this);
-    this.moveUp       = this.moveUp.bind(this);
-    this.moveDown     = this.moveDown.bind(this);
-    this.decayBoard   = this.decayBoard.bind(this);
   }
 
   componentDidMount() {
@@ -39,11 +37,11 @@ class Board extends Component {
     clearInterval(this.foodInterval);
   }
 
-  addFood() {
+  addFood = () => {
     let placed = false;
     while(!placed)
     {
-      let location = Math.floor(Math.random() * 144);
+      let location = Math.floor(Math.random() * this.state.numBlocks);
       let tempArray = this.state.boardArray.slice();
       if (tempArray[location].type === 'empty')
       {
@@ -57,7 +55,7 @@ class Board extends Component {
     }
   }
 
-  updateSnake() {
+  updateSnake = () => {
     switch (this.props.direction) {
       case 'left':
         this.moveLeft();
@@ -75,7 +73,7 @@ class Board extends Component {
     this.decayBoard();
   }
 
-  checkAndMove(location) {
+  checkAndMove = (location) => {
     let tempArray = this.state.boardArray.slice();
     switch (this.state.boardArray[location].type) {
       case 'snake':
@@ -101,35 +99,35 @@ class Board extends Component {
 
   }
 
-  moveLeft() {
-    if (this.state.head % 9 === 0)
-      this.checkAndMove(this.state.head + 8);
+  moveLeft = () => {
+    if (this.state.head % this.state.blocksAcross === 0)
+      this.checkAndMove(this.state.head + this.state.blocksAcross - 1);
     else
       this.checkAndMove(this.state.head - 1);
   }
 
-  moveRight() {
-    if (this.state.head % 9 === 8)
-      this.checkAndMove(this.state.head - 8);
+  moveRight = () => {
+    if (this.state.head % this.state.blocksAcross === this.state.blocksAcross - 1)
+      this.checkAndMove(this.state.head - this.state.blocksAcross + 1);
     else
       this.checkAndMove(this.state.head + 1);
   }
 
-  moveUp() {
-    if (this.state.head < 9)
-      this.checkAndMove(this.state.head + 135);
+  moveUp = () => {
+    if (this.state.head < this.state.blocksAcross)
+      this.checkAndMove(this.state.head + this.state.numBlocks - this.state.blocksAcross);
     else
-      this.checkAndMove(this.state.head - 9);
+      this.checkAndMove(this.state.head - this.state.blocksAcross);
   }
 
-  moveDown() {
-    if (this.state.head > 134)
-      this.checkAndMove(this.state.head - 135);
+  moveDown = () => {
+    if (this.state.head >= this.state.numBlocks - this.state.blocksAcross)
+      this.checkAndMove(this.state.head - this.state.numBlocks + this.state.blocksAcross);
     else
-      this.checkAndMove(this.state.head + 9);
+      this.checkAndMove(this.state.head + this.state.blocksAcross);
   }
 
-  decayBoard() {
+  decayBoard = () => {
     let tempArray = this.state.boardArray.slice();
     for (let temp of tempArray)
     {
@@ -149,7 +147,7 @@ class Board extends Component {
     return (
       <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap' }}>
         {this.state.boardArray.map((block, index) =>
-          <Block key={index} size={this.props.blockSize} type={block.type}/>
+          <Block key={index} size={blockSize} type={block.type} decay={block.decay}/>
         )}
       </View>
     );

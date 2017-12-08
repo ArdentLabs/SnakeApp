@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTNavigator.m \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTNavigator.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/yoga/Yoga.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Release-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTNavItem.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTScrollView.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTScrollableProtocol.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTView.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTWrapperViewController.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/RCTViewControllerProtocol.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Views/UIView+React.h

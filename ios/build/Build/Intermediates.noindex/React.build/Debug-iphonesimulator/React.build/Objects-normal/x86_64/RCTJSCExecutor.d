@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Executors/RCTJSCExecutor.mm \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/ardent-dev/Desktop/SnakeApp/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTJSCErrorHandling.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Profiler/RCTJSCProfiler.h \
+  /Users/ardent-dev/Desktop/SnakeApp/node_modules/react-native/React/Modules/RCTDevMenu.h

@@ -9,7 +9,7 @@ import Controls from './components/Controls';
 const {height, width} = Dimensions.get('window');
 const scoreHeight = height * 0.047;
 const gameHeight  = height * 0.77;
-const gameWidth   = gameHeight * (9/16);
+const gameWidth   = width;
 
 
 
@@ -21,16 +21,9 @@ class App extends Component {
       score: 0,
       screen: 'start',
     }
-    this.setLeft        = this.setLeft.bind(this);
-    this.setRight       = this.setRight.bind(this);
-    this.setUp          = this.setUp.bind(this);
-    this.setDown        = this.setDown.bind(this);
-    this.incrementScore = this.incrementScore.bind(this);
-    this.startGame      = this.startGame.bind(this);
-    this.loseGame       = this.loseGame.bind(this);
   }
 
-  setLeft() {
+  setLeft = () => {
     if (this.state.direction !== 'right')
     {
       this.setState({
@@ -39,7 +32,7 @@ class App extends Component {
     }
   }
 
-  setRight() {
+  setRight = () => {
     if (this.state.direction !== 'left')
     {
       this.setState({
@@ -48,7 +41,7 @@ class App extends Component {
     }
   }
 
-  setUp() {
+  setUp = () => {
     if (this.state.direction !== 'down')
     {
       this.setState({
@@ -57,7 +50,7 @@ class App extends Component {
     }
   }
 
-  setDown() {
+  setDown = () => {
     if (this.state.direction !== 'up')
     {
       this.setState({
@@ -66,13 +59,13 @@ class App extends Component {
     }
   }
 
-  incrementScore() {
+  incrementScore = () => {
     this.setState({
       score: this.state.score + 10,
     });
   }
 
-  startGame() {
+  startGame = () => {
     this.setState({
       screen: 'running',
       score: 0,
@@ -80,7 +73,7 @@ class App extends Component {
     });
   }
 
-  loseGame() {
+  loseGame = () => {
     this.setState({
       screen: 'lost',
     });
